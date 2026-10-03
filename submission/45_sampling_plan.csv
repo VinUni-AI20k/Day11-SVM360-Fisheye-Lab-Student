@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,medium,Phủ ánh sáng và mật độ giao thông thường gặp trước xe; lấy mẫu rải theo thời điểm và cảnh để tránh frame liên tiếp quá giống nhau.
+front,hard,20,high,Ưu tiên vật nhỏ ở xa hoặc sát vòng kính và tình huống chói hoặc che khuất; soát box trên ảnh fisheye gốc.
+rear,normal,25,medium,Phủ cảnh lùi và vật thể thường gặp phía sau với nhiều khoảng cách khác nhau.
+rear,hard,25,high,Ưu tiên vật gần mép khung và vùng thân xe che hoặc hình méo mạnh khi lùi.
+left,normal,20,medium,Phủ mặt bên trong điều kiện rõ và khoảng cách thường gặp.
+left,hard,30,high,Ưu tiên vật ở góc trước và sau trái nơi có seam với camera kề và vật bị cắt ở rìa.
+right,normal,20,medium,Phủ mặt bên trong điều kiện rõ và khoảng cách thường gặp.
+right,hard,30,high,Ưu tiên seam góc trước và sau phải cùng vật bị cắt hoặc che ở sát mép.

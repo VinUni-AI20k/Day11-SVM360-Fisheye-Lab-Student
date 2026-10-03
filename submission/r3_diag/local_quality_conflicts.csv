@@ -1,0 +1,6 @@
+frame,type,left,reference,left_label,reference_label,iou
+adasind_271039.jpg,extra_annotation,7,,Pedestrian,,N/A
+adasind_271039.jpg,extra_annotation,9,,ThreeWheeler,,N/A
+adasind_271039.jpg,missing_annotation,,10,,Pedestrian,N/A
+adasind_295948.jpg,mismatching_label,3,1,Truck,Car,0.994
+adasind_295948.jpg,extra_annotation,7,,Truck,,N/A

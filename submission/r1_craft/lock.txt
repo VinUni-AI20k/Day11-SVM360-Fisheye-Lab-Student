@@ -1,0 +1,9 @@
+round: r1_craft
+slice: B4-center
+sha256: 6997bf13e8daac9ae1cbf02fa422682f9eb3b960cc2812c21d587eaa9293e7f0
+code: 6997-BF13
+locked_at: 2026-09-29T12:35:23+07:00
+shapes: box=27, polygon=8
+prefill_kept: 14
+prefill_edited: 1
+new: 12

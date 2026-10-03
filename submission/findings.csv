@@ -1,1 +1,41 @@
 round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
+calib,C0,adasind_019560.jpg,R4,na,MISSING,E1_annotator_error,P1,annotator,R01;R02,submission/screenshots/c0_calib_missing_review.png;submission/p1_calib/compare.html,rework,v1.0.0,Bike đỗ cạnh cửa hàng bên phải tại (888;801)-(966;895) cao 94 px; thấy bánh và khung xe nhưng export không có box. Xe đỗ không người lái vẫn thuộc Bike; vẽ theo phần nhìn thấy và kiểm occluded bằng ảnh.
+calib,C0,adasind_019560.jpg,R5,na,MISSING,E1_annotator_error,P1,annotator,R01;R02;R04,submission/screenshots/c0_calib_missing_review.png;submission/p1_calib/compare.html,rework,v1.0.0,Phương tiện đỏ có mui đỗ sau người lái áo đỏ tại (327;721)-(457;849) cao 128 px; export bỏ sót toàn bộ vật. Reference gọi ThreeWheeler; cần soát ranh vật với xe hai bánh ở phía trước và phần blur trước khi vẽ lại theo R02/R04.
+calib,C0,adasind_019560.jpg,R6,na,MISSING,E1_annotator_error,P1,annotator,R01;R02;R04,submission/screenshots/c0_calib_missing_review.png;submission/p1_calib/compare.html,rework,v1.0.0,ThreeWheeler màu sáng đỗ sát bên trái xe đỏ tại (287;743)-(338;825) cao 82 px; thấy mui và thân xe riêng nhưng export không có box. Tách từng phương tiện nhìn thấy; không bỏ qua vì xe đang đỗ.
+r1_craft,B4-center,adasind_295948.jpg,draft:box1,na,SPURIOUS,E1_annotator_error,P1,annotator,R01,submission/r1_craft/selfqc.md;assets/images/adasind_295948.jpg,rework,v1.0.0,Car tại (451.92;934.43)-(467.43;961.42) cao 26.99 px dưới H=40. Đề xuất bỏ trong XML; cần xóa box này khỏi export cuối.
+r1_craft,B4-center,adasind_295948.jpg,draft:ego_body+L5+L6+L7,na,IGNORE_SCOPE,E1_annotator_error,P0,annotator,R09,submission/r1_craft/selfqc.md;assets/images/adasind_295948.jpg,rework,v1.0.0,Ba box bên trái frame (x≤145) nằm trong hoặc chồng lên ego_body ignore_region (x=0-229). R09 cấm box ≥50% trong ignore_region; cần kiểm và xóa/di chuyển sang vùng hợp lệ.
+r1_craft,B4-center,adasind_271039.jpg,draft:unboxed-Bike,na,MISSING,E1_annotator_error,P1,annotator,R01;R02;R03,submission/r1_craft/selfqc.md;assets/images/adasind_271039.jpg,rework,v1.0.0,Thấy bánh và khung xe hai bánh phía sau người cạnh đuôi Car đỏ nhưng không có box Bike riêng trong export. Đề xuất thêm Bike occluded=true tại vùng (425;870)-(463;946).
+r1_craft,B4-center,adasind_270517.jpg,draft:unboxed-Pedestrian,na,MISSING,E1_annotator_error,P1,annotator,R01;R02;R05,submission/r1_craft/selfqc.md;assets/images/adasind_270517.jpg,rework,v1.0.0,Mép trái frame có phần người nhìn thấy cao hơn 40 px chưa có box. Đề xuất box (0;768)-(14;891) truncated=true theo phần nhìn thấy.
+r2_qa,B4-center,adasind_295948.jpg,L1,L_only,SPURIOUS,,P1,qa,R01,submission/r2_qa/qa_review.md;submission/r2_qa/qa_overlay.html,rework,v1.0.0,Box Car tại (451.92;934.43)-(467.43;961.42) có chiều cao 26.99 px dưới ngưỡng H=40 px theo R01; kiến nghị xóa.
+r2_qa,B4-center,adasind_295948.jpg,L3,L_only,ATTRIBUTE,,P2,qa,R02;R05,submission/r2_qa/qa_review.md;submission/r2_qa/qa_overlay.html,rework,v1.0.0,Box Bike ở mép phải (570;605)-(1080;1720) bị cắt ngang bởi mép vòng kính; cần gán truncated=true và edge_zone=true theo R05.
+r2_qa,B4-center,adasind_270517.jpg,L2,L_only,BOX_GEOMETRY,,P2,qa,R01;R02,submission/r2_qa/qa_review.md;submission/r2_qa/qa_overlay.html,rework,v1.0.0,Pedestrian tại (332;762)-(404;904) cao 142 px; box ôm khít đối tượng nhìn thấy nhưng cần rà soát lại ranh giới đáy chân theo R02.
+r1_craft,B4-center,adasind_271039.jpg,L8,na,IGNORE_SCOPE,,,,,,,,
+r1_craft,B4-center,adasind_271039.jpg,L7,na,SPURIOUS,,,,,,,,
+r1_craft,B4-center,adasind_271039.jpg,L9,na,SPURIOUS,,,,,,,,
+r1_craft,B4-center,adasind_271039.jpg,R10,na,MISSING,,,,,,,,
+r1_craft,B4-center,adasind_295948.jpg,L4,na,IGNORE_SCOPE,,,,,,,,
+r1_craft,B4-center,adasind_295948.jpg,L5,na,IGNORE_SCOPE,,,,,,,,
+r1_craft,B4-center,adasind_295948.jpg,L6,na,IGNORE_SCOPE,,,,,,,,
+r1_craft,B4-center,adasind_295948.jpg,L3+R1,na,WRONG_CLASS,,,,,,,,
+r1_craft,B4-center,adasind_295948.jpg,L7,na,SPURIOUS,,,,,,,,
+r3_diag,B4-center,adasind_270517.jpg,L4+R4,LR_noM,MISSING,E4_model_domain,P2,ai_team,,,keep_with_reason,,Model bỏ sót vật thể nhìn thấy bởi người và reference do góc nghiêng và méo ngoại vi.
+r3_diag,B4-center,adasind_270517.jpg,L7+R2,LR_noM,MISSING,E4_model_domain,P2,ai_team,,,keep_with_reason,,Model bỏ sót vật thể nhìn thấy bởi người và reference do góc nghiêng và méo ngoại vi.
+r3_diag,B4-center,adasind_270517.jpg,M5,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_270517.jpg,M6,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_270517.jpg,M7,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_270517.jpg,M9,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_270517.jpg,M10,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_270517.jpg,M11,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_271039.jpg,L5+R9,LR_noM,MISSING,E4_model_domain,P2,ai_team,,,keep_with_reason,,Model bỏ sót vật thể nhìn thấy bởi người và reference do góc nghiêng và méo ngoại vi.
+r3_diag,B4-center,adasind_271039.jpg,L12+R6,LR_noM,MISSING,E4_model_domain,P2,ai_team,,,keep_with_reason,,Model bỏ sót vật thể nhìn thấy bởi người và reference do góc nghiêng và méo ngoại vi.
+r3_diag,B4-center,adasind_271039.jpg,L7+M8,LM_noR,SPURIOUS,E0_reference_defect,P1,guideline,,,keep_with_reason,,Cả Annotator và Model đều phát hiện vật thể hợp lệ; nghi ngờ teaching reference bị thiếu sót.
+r3_diag,B4-center,adasind_271039.jpg,L9,L_only,SPURIOUS,E1_annotator_error,P1,annotator,,,rework,,Box thừa do Annotator vẽ không khớp ground-truth; cần xóa/điều chỉnh ở P5 rework.
+r3_diag,B4-center,adasind_271039.jpg,R10,R_only,MISSING,E1_annotator_error,P1,annotator,,,rework,,Vật thể có trong reference nhưng Annotator bỏ sót; cần bổ sung box ở P5 rework.
+r3_diag,B4-center,adasind_271039.jpg,M9,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_271039.jpg,M11,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_271039.jpg,M12,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.
+r3_diag,B4-center,adasind_295948.jpg,L2+R3,LR_noM,MISSING,E4_model_domain,P2,ai_team,,,keep_with_reason,,Model bỏ sót vật thể nhìn thấy bởi người và reference do góc nghiêng và méo ngoại vi.
+r3_diag,B4-center,adasind_295948.jpg,L3+M2,LM_noR,SPURIOUS,E0_reference_defect,P1,guideline,,,keep_with_reason,,Cả Annotator và Model đều phát hiện vật thể hợp lệ; nghi ngờ teaching reference bị thiếu sót.
+r3_diag,B4-center,adasind_295948.jpg,L7,L_only,SPURIOUS,E1_annotator_error,P1,annotator,,,rework,,Box thừa do Annotator vẽ không khớp ground-truth; cần xóa/điều chỉnh ở P5 rework.
+r3_diag,B4-center,adasind_295948.jpg,R1,R_only,MISSING,E1_annotator_error,P1,annotator,,,rework,,Vật thể có trong reference nhưng Annotator bỏ sót; cần bổ sung box ở P5 rework.
+r3_diag,B4-center,adasind_295948.jpg,M6,M_only,SPURIOUS,E4_model_domain,P2,ai_team,,,keep_with_reason,,YOLO26m phát hiện ảo do lệch miền fisheye; cần fine-tune model trên ảnh mắt cá.

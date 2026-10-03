@@ -1,6 +1,6 @@
 # Quan sát vạch ô đỗ
 
-- Hai vạch `parking_line` đã vẽ (mô tả vị trí trong ảnh): TODO
-- Một vạch/dấu sơn hoặc biên **không** vẽ, và vì sao: TODO
-- Polygon `free_space` dừng ở đâu; có phần bị che nào không: TODO
-- Ca chưa chắc cần hỏi người soát (nếu không có, ghi “không có”): TODO
+- Hai vạch `parking_line` rõ nhất nằm ở tiền cảnh: vạch xiên từ khoảng (405, 652) xuống (534, 720), và vạch xiên từ khoảng (699, 623) sang (960, 684). Mỗi vạch bắt đầu ở mép lối xe chạy rồi kéo vào dãy ô đỗ gần máy ảnh; hai phía của từng vạch là hai chỗ đỗ kề nhau, nên đây là ranh ô chứ không phải hướng dẫn chạy xe. Export còn có hai đoạn sơn chia ô ở mép trái và mép phải; mọi polyline chỉ đi theo phần sơn nhìn thấy.
+- Không vẽ biên sáng nằm ngang ở phía xa, ngay trước hàng rào (khoảng y=465). Biên này chạy dọc cả dãy/lối đi và không tách hai ô đỗ riêng lẻ; gọi nó là `parking_line` sẽ lẫn ranh dãy với vạch chia ô.
+- Polygon `free_space` bao phần mặt đường trống của lối xe chạy nằm giữa dãy ô xa và dãy ô tiền cảnh. Mép trên đi từ khoảng (0, 574) tới (960, 514), mép dưới từ khoảng (0, 680) tới (960, 571), dừng trước các vạch ô đỗ tiền cảnh; hai đầu dừng ở mép khung ảnh. Xe màu đỏ ở khoảng (207, 467) nằm ngoài vùng này. Không có vật che rõ ràng bên trong polygon; tôi không suy rộng vùng trống ra sau dãy ô hay vật bị che.
+- Ca cần người soát xác nhận: đoạn sơn ngắn ở mép phải, khoảng (922, 597)–(960, 603), được vẽ là `parking_line` vì cùng hướng và cùng nhịp với các vạch tiền cảnh, nhưng khung ảnh cắt phần tiếp theo nên vai trò chia ô của đoạn này kém chắc hơn hai vạch giữa ảnh.

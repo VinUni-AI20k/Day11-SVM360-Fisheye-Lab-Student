@@ -1,0 +1,39 @@
+round: rework
+slice: B4-center
+sha256: 9313188f1a2e8609768b9a2b3293378ec9c34ef796448fced8af9a05c9dbc2ee
+code: 9313-188F
+locked_at: 2026-09-29T13:20:54+07:00
+shapes: box=26, polygon=8
+prefill_kept: 14
+prefill_edited: 1
+new: 11
+history:
+  round: rework
+  slice: B4-center
+  sha256: 7da26a1ccf1a1baabc01af29a27c4e52b8ce81f18972d2bce70a850b2a0071fb
+  code: 7DA2-6A1C
+  locked_at: 2026-09-29T13:20:02+07:00
+  shapes: box=26, polygon=8
+  prefill_kept: 14
+  prefill_edited: 1
+  new: 11
+  history:
+    round: rework
+    slice: B4-center
+    sha256: 5240b51298251ba01c95309835767a897e98ed9a4fbf5c158205f6d1d742d47a
+    code: 5240-B512
+    locked_at: 2026-09-29T13:15:18+07:00
+    shapes: box=27, polygon=8
+    prefill_kept: 14
+    prefill_edited: 1
+    new: 12
+    history:
+      round: rework
+      slice: B4-center
+      sha256: eb9ac86ad284aa589546411c4ab81a75e989f5eaf547a1a08f4eb3a91c13e3d3
+      code: EB9A-C86A
+      locked_at: 2026-09-29T13:12:26+07:00
+      shapes: box=28, polygon=8
+      prefill_kept: 14
+      prefill_edited: 1
+      new: 13

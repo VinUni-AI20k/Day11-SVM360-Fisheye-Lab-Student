@@ -1,0 +1,5 @@
+# Preserve the exact CVAT export bytes used by the calibration SHA-256 lock.
+submission/p1_calib/annotations.xml -text
+submission/r1_craft/annotations.xml -text
+submission/rework/annotations-v2.xml -text
+
